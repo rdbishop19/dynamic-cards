@@ -79,6 +79,11 @@ const createCardContainer = (text) => {
 
 const createCardHandler = () => {
     let cardText = document.getElementById("cardText-entry").value;
+    // prevent empty card creation
+    if (!cardText){
+        console.log("No text");
+        return
+    }
     // console.log(cardText);
     //TODO: add send cardText to createCardContainer function
     let cardHtml = createCardContainer(cardText);
