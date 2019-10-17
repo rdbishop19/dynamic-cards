@@ -1,0 +1,13 @@
+.card {
+    flex-flow: row;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    background-color: aquamarine;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
