@@ -88,3 +88,11 @@ const createCardHandler = () => {
 }
 
 document.querySelector("#create-button").addEventListener("click", createCardHandler);
+
+// TODO: create clearTextArea function
+const clearTextArea = () => {
+    // console.log("Clicked clear button");
+    document.querySelector("#cardText-entry").value = "";
+}
+// TODO: addEventLisenter to 'clear' button
+document.querySelector("#clear-button").addEventListener("click", clearTextArea);
