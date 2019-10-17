@@ -28,7 +28,14 @@ should then be removed from the DOM. Not just made invisible, actually removed f
 */
 
 const deleteCard = () => {
-    console.log("Delete card clicked", event.target);
+    // console.log("Delete card clicked", event.target.id);
+    // TODO: get card Id from event
+    let cardId = event.target.id.split("--")[1];
+    let cardToDelete = document.getElementById(`card--${cardId}`);
+    // TODO: get current card list
+    let cardList = document.getElementById("card-container")
+    // TODO: delete card from DOM
+    cardList.removeChild(cardToDelete);
 }
 
 const renderCardToDom = (card) => {
